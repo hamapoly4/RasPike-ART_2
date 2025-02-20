@@ -24,7 +24,7 @@
 #include "GyroSensor.hpp"
 #include "Button.hpp"
 
-static const float TARGET = 700;
+static const float TARGET = 85;
 
 /* ここに静的インスタンスを生成する */
 static Motor        gLeftMotor(PBIO_PORT_ID_E, PUP_DIRECTION_COUNTERCLOCKWISE);

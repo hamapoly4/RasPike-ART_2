@@ -21,12 +21,12 @@ void RotateRun::run()
 
 void RotateRun::rotateLeft()
 {
-    mLeftMotor.setPower(-mPOWER - mTurn + mTurn1);
+    mLeftMotor.setPower(-(mPOWER + mTurn + mTurn1));
     mRightMotor.setPower(mPOWER + mTurn - mTurn1);
 }
 
 void RotateRun::rotateRight()
 {
     mLeftMotor.setPower(mPOWER + mTurn - mTurn1);
-    mRightMotor.setPower(-mPOWER - mTurn + mTurn1);
+    mRightMotor.setPower(-(mPOWER + mTurn + mTurn1));
 }
